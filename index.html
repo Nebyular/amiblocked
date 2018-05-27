@@ -34,15 +34,14 @@
 <div class="row" style="vertical-align: middle; horiz-align: center;">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-        <h1>test</h1>
+        <h1>DNS Blocklist Check</h1>
         <form>
             <div id="blocked" class="alert alert-danger" role="alert" style="display: none;"><span glyphicon glyphicon-exclamation-sign alert-dismissable aria-hidden="true"><span class="sr-only">Error:</span>Your DNS/ISP is blocking sites</span></div>
             <div id="notblocked" class="alert alert-success" role="alert" style="display: none;"><span glyphicon glyphicon-ok-sign alert-dismissable aria-hidden="true"><span class="sr-only">Error:</span>Your DNS/ISP is not blocking sites</span></div>
             
 
             <div class="form-group">
-                <label for="ispinput">Name:</label>
-            <input list="isps" class="form-control" id="ispinput">
+            <input list="isps" class="form-control" id="ispinput" placeholder="ISP Name">
             <datalist id="isps">
               <option value="Telstra">
                 <option value="Bigpond"></option>
@@ -64,7 +63,7 @@
         </div>
 
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="DNS IP">
+                <input type="text" class="form-control" placeholder="DNS IP coming soon..."  disabled>
             </div>
             <button id="submit" type="button" onclick="myFunction()"" class="btn btn-default btn-lg btn-block">Check</button>
         </form>
